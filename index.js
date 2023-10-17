@@ -10,6 +10,4 @@ app.get('/test', (req, res) => {
 app.get("/", (req, res) => {
     res.status(200).send({ 'msg': "Success Route Hit " })
 })
-app.listen(8000, () => {
-    console.log("Server is Connected to PORT", 8000);
-})
+module.exports = { app }
